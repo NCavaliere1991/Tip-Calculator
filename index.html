@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibson Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Gibson Tip Calculator</h1>
+    <section id="content">
+        <form id="moneyForm">
+            <label for="ccTips">CC Tips:</label>
+            <input type="number" id="ccTips" name="ccTips">
+            <label for="dayccTips">Day CC Tips:</label>
+            <input type="number" id="dayccTips" name="dayccTips">
+            <label for="cashTips">Cash Tips:</label>
+            <input type="number" id="cashTips" name="cashTips">
+            <label for="hoursOpen">Hours Open:</label>
+            <input type="number" id="hoursOpen" name="hoursOpen">
+            <label for="cashOnHand">Cash On Hand:</label>
+            <input type="number" id="cashOnHand" name="cashOnHand">
+            <div id="barback">
+                <label for="barbackHours">Barback Hours:</label>
+                <input type="number" id="barbackHours" name="barbackHours">
+            </div>
+            <div id="serverForm">
+                <label for="serversWorking">-------------------------------Servers
+                    Working------------------------------</label><br>
+                <label for="server1Name">Name:</label>
+                <input id="server1Name" name="server1Name" type="text">
+                <label for="server1Hours">Hours:</label>
+                <input id="server1Hours" name="server1Hours" type="number"><br>
+                <label for="server2Name">Name:</label>
+                <input id="server2Name" name="server2Name" type="text">
+                <label for="server2Hours">Hours:</label>
+                <input id="server2Hours" name="server2Hours" type="number"><br>
+                <label for="server3Name">Name:</label>
+                <input id="server3Name" name="server3Name" type="text">
+                <label for="server3Hours">Hours:</label>
+                <input id="server3Hours" name="server3Hours" type="number"><br>
+                <label for="server4Name">Name:</label>
+                <input id="server4Name" name="server4Name" type="text">
+                <label for="server4Hours">Hours:</label>
+                <input id="server4Hours" name="server4Hours" type="number"><br>
+                <div id="hourSection">
+                    <label for="totalHours">Total Hours:</label>
+                    <input type="number" id="totalHours" name="totalHours"><br>
+                </div>
+            </div>
+            <button id="calculateBtn" onclick="calculate()" type="button">Calculate</button>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

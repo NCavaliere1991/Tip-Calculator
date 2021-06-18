@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moneyForm {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#serverForm {
+    display:inline-block;
+    width: 500px;
+    margin-top: 20px;
+}
+
+label, input {
+    margin-top: 20px;
+}
+
+#calculateBtn {
+    margin-top: 20px;
+}
+
+#moneyForm input {
+    margin-right: 5px;
+}
+
+#moneyForm label {
+    margin-right: 5px;
+}
+
+#hourSection {
+    text-align: center;
+    margin-left: 100px;
+}
