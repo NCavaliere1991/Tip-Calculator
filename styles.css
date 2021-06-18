@@ -17,9 +17,17 @@ section {
     flex-wrap: wrap;
 }
 
+#moneyForm label {
+    margin-right: 50px;
+}
+
 #serverForm {
     display:inline-block;
     margin-top: 20px;
+}
+
+#serverForm label {
+    margin-right: 50px;
 }
 
 label, input {
