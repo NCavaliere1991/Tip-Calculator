@@ -21,6 +21,11 @@ section {
     margin-right: 50px;
 }
 
+#moneyForm div {
+    width: 100%;
+    text-align: center;
+}
+
 #serverForm {
     display:inline-block;
     margin-top: 20px;
