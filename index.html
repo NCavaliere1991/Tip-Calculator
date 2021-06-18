@@ -13,14 +13,22 @@
     <h1>Gibson Tip Calculator</h1>
     <section id="content">
         <form id="moneyForm">
-            <label for="ccTips">CC Tips:</label>
-            <input type="number" id="ccTips" name="ccTips">
-            <label for="dayccTips">Day CC Tips:</label>
-            <input type="number" id="dayccTips" name="dayccTips">
-            <label for="cashTips">Cash Tips:</label>
-            <input type="number" id="cashTips" name="cashTips">
-            <label for="hoursOpen">Hours Open:</label>
-            <input type="number" id="hoursOpen" name="hoursOpen">
+            <div>
+                <label for="ccTips">CC Tips:</label>
+                <input type="number" id="ccTips" name="ccTips">
+            </div>
+            <div>
+                <label for="dayccTips">Day CC Tips:</label>
+                <input type="number" id="dayccTips" name="dayccTips">
+            </div>
+            <div>
+                <label for="cashTips">Cash Tips:</label>
+                <input type="number" id="cashTips" name="cashTips">
+            </div>
+            <div>
+                <label for="hoursOpen">Hours Open:</label>
+                <input type="number" id="hoursOpen" name="hoursOpen">
+            </div>
             <label for="cashOnHand">Cash On Hand:</label>
             <input type="number" id="cashOnHand" name="cashOnHand">
             <div id="barback">
@@ -29,7 +37,7 @@
             </div>
             <div id="serverForm">
                 <label for="serversWorking">-------------------------------Servers
-                    Working------------------------------</label><br>
+                    Working-----------------------</label><br>
                 <label for="server1Name">Name:</label>
                 <input id="server1Name" name="server1Name" type="text">
                 <label for="server1Hours">Hours:</label>
@@ -55,6 +63,3 @@
         </form>
     </section>
     <script src="index.js"></script>
-</body>
-
-</html>
