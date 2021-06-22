@@ -76,3 +76,7 @@ button:hover {
     background-color: purple;
     color: greenyellow;
 }
+
+.hours {
+    width: 50px;
+}
