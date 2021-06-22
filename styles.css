@@ -1,5 +1,11 @@
 h1 {
     text-align: center;
+    font-size: 40px;
+}
+
+body {
+    background-color: dimgray;
+    color: goldenrod;
 }
 
 section {
@@ -7,6 +13,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 20px;
 }
 
 #moneyForm {
@@ -53,4 +60,19 @@ label, input {
 
 #hourSection {
     text-align: center;
+}
+
+button {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid white;
+    font-size: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: greenyellow;
 }
