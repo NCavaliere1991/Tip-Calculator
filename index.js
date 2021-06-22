@@ -1,20 +1,15 @@
-const totalHours = document.getElementById("totalHours");
+
 const cashOnHand = document.getElementById("cashOnHand");
 const calculateBtn = document.getElementById("calculateBtn");
 const content = document.getElementById("content");
 const cashTips = document.getElementById("cashTips");
+const today = new Date().toLocaleDateString();
+const heading = document.getElementById("heading");
+
+heading.innerHTML = today;
 
 
 function calculate() {
-    const shiftTips = getShiftTips();
-    const totalTips = getTotalTips(shiftTips);
-    const tipsPerHour = getTipsPerHour(totalTips);
-    const barbackTips = getBarbackTips(tipsPerHour);
-    const barTips = getBarTips(totalTips, barbackTips);
-    const ourTipsPerHour = Math.round(barTips / totalHours.value);
-    const drop = getDrop(shiftTips);
-    const remainder = getRemainder(shiftTips);
-    const cashToDivide = getCashToDivide();
     const serverOneName = document.getElementById("server1Name");
     const serverOneHours = document.getElementById("server1Hours");
     const serverTwoName = document.getElementById("server2Name");
@@ -23,6 +18,16 @@ function calculate() {
     const serverThreeHours = document.getElementById("server3Hours");
     const serverFourName = document.getElementById("server4Name");
     const serverFourHours = document.getElementById("server4Hours");
+    const totalHours = Number(serverOneHours.value) + Number(serverTwoHours.value) + Number(serverThreeHours.value) + Number(serverFourHours.value);
+    const shiftTips = getShiftTips();
+    const totalTips = getTotalTips(shiftTips);
+    const tipsPerHour = getTipsPerHour(totalTips);
+    const barbackTips = getBarbackTips(tipsPerHour);
+    const barTips = getBarTips(totalTips, barbackTips);
+    const ourTipsPerHour = Math.round(barTips / totalHours);
+    const drop = getDrop(shiftTips);
+    const remainder = getRemainder(shiftTips);
+    const cashToDivide = getCashToDivide();
     const serverOneTips = Math.round(serverOneHours.value * ourTipsPerHour);
     const serverTwoTips = Math.round(serverTwoHours.value * ourTipsPerHour);
     const serverThreeTips = Math.round(serverThreeHours.value * ourTipsPerHour);
