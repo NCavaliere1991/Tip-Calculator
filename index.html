@@ -13,46 +13,63 @@
     <h1 id="heading">Gibson Tip Calculator</h1>
     <section id="content">
         <form id="moneyForm">
-            <div>
-                <label for="ccTips">CC Tips:</label>
-                <input type="number" id="ccTips" name="ccTips">
-            </div>
-            <div>
-                <label for="dayccTips">Day CC Tips:</label>
-                <input type="number" id="dayccTips" name="dayccTips">
-            </div>
-            <div>
-                <label for="cashTips">Cash Tips:</label>
-                <input type="number" id="cashTips" name="cashTips">
-            </div>
-            <div>
-                <label for="hoursOpen">Hours Open:</label>
-                <input type="number" id="hoursOpen" name="hoursOpen">
-            </div>
-            <label for="cashOnHand">Cash On Hand:</label>
-            <input type="number" id="cashOnHand" name="cashOnHand">
-            <div id="barback">
-                <label for="barbackHours">Barback Hours:</label>
-                <input type="number" id="barbackHours" name="barbackHours">
+            <div id="formTop">
+                <div>
+                    <label for="ccTips">CC Tips:</label>
+                    <input type="number" id="ccTips" name="ccTips">
+                </div>
+                <div>
+                    <label for="dayccTips">Day CC Tips:</label>
+                    <input type="number" id="dayccTips" name="dayccTips">
+                </div>
+                <div>
+                    <label for="cashTips">Cash Tips:</label>
+                    <input type="number" id="cashTips" name="cashTips">
+                </div>
+                <div>
+                    <label for="hoursOpen">Hours Open:</label>
+                    <input type="number" id="hoursOpen" name="hoursOpen">
+                </div>
+                <label for="cashOnHand">Cash On Hand:</label>
+                <input type="number" id="cashOnHand" name="cashOnHand">
+                <div id="barback">
+                    <label for="barbackHours">Barback Hours:</label>
+                    <input type="number" id="barbackHours" name="barbackHours">
+                </div>
             </div>
             <div id="serverForm">
-                <h2>--------Servers Working--------</h2>
-                <label for="server1Name">Name:</label>
-                <input id="server1Name" name="server1Name" type="text">
-                <label for="server1Hours">Hours:</label>
-                <input class="hours" id="server1Hours" name="server1Hours" type="number"><br>
-                <label for="server2Name">Name:</label>
-                <input id="server2Name" name="server2Name" type="text">
-                <label for="server2Hours">Hours:</label>
-                <input class="hours" id="server2Hours" name="server2Hours" type="number"><br>
-                <label for="server3Name">Name:</label>
-                <input id="server3Name" name="server3Name" type="text">
-                <label for="server3Hours">Hours:</label>
-                <input class="hours" id="server3Hours" name="server3Hours" type="number"><br>
-                <label for="server4Name">Name:</label>
-                <input id="server4Name" name="server4Name" type="text">
-                <label for="server4Hours">Hours:</label>
-                <input class="hours" id="server4Hours" name="server4Hours" type="number"><br>
+                <h2 id="servers">--------Servers Working--------</h2>
+                <div id="serverOne">
+                    <label for="server1Name">Name:</label>
+                    <input id="server1Name" name="server1Name" type="text">
+                    <label for="server1Hours">Hours:</label>
+                    <input class="hours" id="server1Hours" name="server1Hours" type="number"><br>
+                </div>
+                <div id="serverTwo">
+                    <label for="server2Name">Name:</label>
+                    <input id="server2Name" name="server2Name" type="text">
+                    <label for="server2Hours">Hours:</label>
+                    <input class="hours" id="server2Hours" name="server2Hours" type="number"><br>
+                </div>
+                <div id="serverThree">
+                    <label for="server3Name">Name:</label>
+                    <input id="server3Name" name="server3Name" type="text">
+                    <label for="server3Hours">Hours:</label>
+                    <input class="hours" id="server3Hours" name="server3Hours" type="number"><br>
+                </div>
+                <div id=serverFour>
+                    <label for="server4Name">Name:</label>
+                    <input id="server4Name" name="server4Name" type="text">
+                    <label for="server4Hours">Hours:</label>
+                    <input class="hours" id="server4Hours" name="server4Hours" type="number"><br>
+                </div>
+                <div id="serverFive">
+                    <label for="server5Name">Name:</label>
+                    <input id="server5Name" name="server5Name" type="text">
+                    <label for="server5Hours">Hours:</label>
+                    <input class="hours" id="server5Hours" name="server5Hours" type="number"><br>
+                </div>
+                <div id="money"></div>
             </div>
             <div>
                 <button id="calculateBtn" onclick="calculate()" type="button">Calculate</button>
