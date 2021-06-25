@@ -45,7 +45,7 @@ function calculate() {
     const serverFourTips = Math.round(serverFourHours.value * ourTipsPerHour);
     const serverFiveTips = Math.round(serverFiveHours.value * ourTipsPerHour);
     formTop.classList.add("hide");
-    servers.innerHTML = "<h2>-------Tip Outs-------</h2>"
+    servers.innerHTML = "<h2>---Tip Outs---</h2>"
     serverOne.innerHTML = `<h3>Barback: $${barbackTips}</h3>
     <h3>${serverOneName.value}: $${serverOneTips}</h3>`
     serverTwo.innerHTML = `<h3>${serverTwoName.value}: $${serverTwoTips}</h3>`
