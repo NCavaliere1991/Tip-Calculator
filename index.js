@@ -50,7 +50,11 @@ function calculate() {
     serverOne.innerHTML = `<h3>Barback: $${barbackTips}</h3>
     <h3>${serverOneName.value}: $${serverOneTips}</h3>`
     serverTwo.innerHTML = `<h3>${serverTwoName.value}: $${serverTwoTips}</h3>`
-    serverThree.innerHTML = `<h3>${serverThreeName.value}: $${serverThreeTips}</h3>`
+    if (serverThreeName.value === "") {
+        serverThree.classList.add("hide");
+    } else {
+        serverThree.innerHTML = `<h3>${serverThreeName.value}: $${serverThreeTips}</h3>`
+    }
     if (serverFourName.value === "") {
         serverFour.classList.add("hide");
     } else {
