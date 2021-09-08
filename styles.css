@@ -1,0 +1,102 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    background-color: dimgray;
+    color: rgb(248, 188, 35);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(138, 138, 138);
+}
+
+#moneyForm {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid orange;
+    margin: 20px;
+    padding: 20px;
+}
+
+#moneyForm label {
+    margin-right: 50px;
+}
+
+#moneyForm div {
+    width: 100%;
+    text-align: center;
+}
+
+#serverForm {
+    display:inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#serverForm label {
+    margin-right: 50px;
+}
+
+label, input {
+    margin-top: 20px;
+}
+
+#calculateBtn {
+    margin-top: 20px;
+}
+
+#moneyForm input {
+    margin-right: 5px;
+}
+
+#moneyForm label {
+    margin-right: 5px;
+}
+
+#hourSection {
+    text-align: center;
+}
+
+button {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid white;
+    font-size: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: greenyellow;
+}
+
+.hours {
+    width: 50px;
+}
+
+.hide {
+    display: none;
+}
