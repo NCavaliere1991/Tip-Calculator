@@ -11,7 +11,7 @@ const servers = document.getElementById("servers");
 const money = document.getElementById("money");
 const serverForm = document.getElementById("serverForm");
 
-heading.innerHTML = today;
+heading.innerHTML = 'The Gibson' + " " + today;
 
 
 function calculate() {
