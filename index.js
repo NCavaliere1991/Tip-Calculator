@@ -93,7 +93,7 @@ function getTipsPerHour(totalTips) {
 
 function getBarbackTips(tipsPerHour) {
     const barbackHours = document.getElementById("barbackHours");
-    return Math.round((barbackHours.value * tipsPerHour) * 0.18)
+    return Math.round((barbackHours.value * tipsPerHour) * 0.2)
 }
 
 function getBarTips(totalTips, barbackTips) {
